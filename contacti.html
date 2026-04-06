@@ -1,32 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Контакты - Магазин ковриков</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>КОНТАКТЫ</h1>
-    <hr>
-    <a href="./index.html">главная</a>
-    <a href="./catalog.html">каталог</a>
-    <a href="./contacti.html">контакты</a>
-</a>
-<hr>
-<h1>Пишите нам!</h1>
-<input type="text" size="30" placeholder="Ваше ФИО">
-<input type="text" size="30" placeholder="email">
-<input type="text" size="30" placeholder="Тема">
-<input type="text" size="30" placeholder="Текстовое поле">
-<input type="text" size="30" placeholder="Телефон">
-<h2>Адрес</h2>
-<p>Номер магазина +7(999)987-65-43 <br>
-    Адрес: Зеленая 22 <br>
-    Почта: kovriki@mail.ru <br>
-    </p>
-    <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/org/dns/174301613332/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">DNS</a><a href="https://yandex.ru/maps/213/moscow/category/electronics_store/184107835/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Магазин электроники в Москве</a><a href="https://yandex.ru/maps/213/moscow/category/household_appliances_store/184107853/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:28px;">Магазин бытовой техники в Москве</a><iframe src="https://yandex.ru/map-widget/v1/?ll=37.514713%2C55.811434&mode=search&oid=174301613332&ol=biz&sctx=ZAAAAAgBEAAaKAoSCfyKNVzk2EJAEd7IPPIH4UtAEhIJl1MCYhLu8j8RoijQJ%2FLk8D8iBgABAgMEBSgKOABAi58BSAFiOnJlYXJyPXNjaGVtZV9Mb2NhbC9HZW91cHBlci9BZHZlcnRzL0N1c3RvbU1heGFkdi9FbmFibGVkPTFiOnJlYXJyPXNjaGVtZV9Mb2NhbC9HZW91cHBlci9BZHZlcnRzL0N1c3RvbU1heGFkdi9NYXhhZHY9MTViRHJlYXJyPXNjaGVtZV9Mb2NhbC9HZW91cHBlci9BZHZlcnRzL0N1c3RvbU1heGFkdi9SZWdpb25JZHM9WzEsMTAxNzRdYkByZWFycj1zY2hlbWVfTG9jYWwvR2VvdXBwZXIvQWR2ZXJ0cy9NYXhhZHZUb3BNaXgvTWF4YWR2Rm9yTWl4PTEwagJydZ0BzczMPaABAKgBAL0BIBpUFMIBjQGUmr6piQW16%2BCxwQP1vobDmwHyy6bKZufazI28BemnxezAAYe1mobJAZbj6sqYAbic1ZnlBbjPi93YA6v1sImVBd%2FAqrulBsHvhrPoAef%2F65aWAdDQ8b%2FJA82zla%2F0A8ekkIOCBsLK7I66BNaDhb1rwKLYi84DhqiHt9AD75rY6rgFssaoy74DtN%2BF20qCAgbQtNC90YGKAgCSAgCaAgxkZXNrdG9wLW1hcHOqArEBMTk5NjI2MjgzNSwyNTI5OTM2NjA3MCw0OTQ1MzA5MTk3NiwyODU4NzkzMDUsMTQ0ODAyMDUzMDY5LDI2OTA2MTMxMTE3LDExODIwODYxMTIzLDIxMDg2NzI3NTk3NSwxMzAyNDkxMzM1MTEsNjAwMjE3NiwxOTM1NzE4MDU3MCwyMTczNzY1NjgzODMsMTQ0NDgxNDg5NTA0LDk5MDMyMzI0OTk0LDE0NDgwNzE4NTk3sAIB2gIoChIJ6LzGLlG7QkAROpgo5BHoS0ASEgkAuwm%2BafrIPxEAxK9Yw0XGP%2BACAQ%3D%3D&sll=37.514713%2C55.811434&source=serp_navig&sspn=0.195142%2C0.174004&text=%D0%B4%D0%BD%D1%81&z=12.4" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
-    <hr/>
-    <footer>Все права защищены &copy;</footer>
-
+    <div class="container">
+        <header>
+            <h1>📞 КОНТАКТЫ</h1>
+            <p>Свяжитесь с нами любым удобным способом</p>
+        </header>
+        
+        <nav>
+            <a href="index.html">🏠 Главная</a>
+            <a href="catalog.html">📦 Каталог</a>
+            <a href="contacti.html">📞 Контакты</a>
+        </nav>
+        
+        <main>
+            <div class="contact-form">
+                <h2>✉️ Напишите нам</h2>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label>Ваше ФИО</label>
+                        <input type="text" placeholder="Иванов Иван Иванович">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" placeholder="ivan@example.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Телефон</label>
+                        <input type="tel" placeholder="+7 (999) 123-45-67">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Тема сообщения</label>
+                        <input type="text" placeholder="Вопрос о товаре">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Сообщение</label>
+                        <textarea rows="5" placeholder="Ваше сообщение..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn">📤 Отправить</button>
+                </form>
+            </div>
+            
+            <div class="store-info">
+                <h3>🏪 Наш магазин</h3>
+                <p>📍 Адрес: Зеленая 22, Москва</p>
+                <p>📞 Телефон: +7 (999) 987-65-43</p>
+                <p>✉️ Email: kovriki@mail.ru</p>
+                <p>🕐 Режим работы: Пн-Вс 10:00 - 21:00</p>
+            </div>
+            
+            <div class="map-container">
+                <iframe src="https://yandex.ru/map-widget/v1/?ll=37.514713%2C55.811434&mode=search&sll=37.514713%2C55.811434&sspn=0.195142%2C0.174004&z=12.4" 
+                        width="100%" height="400" frameborder="0" allowfullscreen="true">
+                </iframe>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Все права защищены &copy; 2026 Магазин ковриков для мыши</p>
+        </footer>
+    </div>
+    
+    <div class="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</div>
+    
+    <script>
+        window.addEventListener('scroll', function() {
+            const scrollTop = document.querySelector('.scroll-top');
+            if (window.pageYOffset > 300) {
+                scrollTop.classList.add('show');
+            } else {
+                scrollTop.classList.remove('show');
+            }
+        });
+    </script>
 </body>
 </html>
