@@ -1,17 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Магазин ковриков для мыши</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>МАГАЗИН КОВРИКОВ ДЛЯ МЫШИ</h1>
-    <hr>
-    <p>Всех приветствуем в нашем магазине ковриков для мыши</p>
-    <a href="./index.html">главная</a>
-    <a href="./catalog.html">каталог</a>
-    <a href="./contacti.html">контакты</a>
-    <footer>Все права защищены &copy;</footer>
+    <div class="container">
+        <header>
+            <h1>🖱️ МАГАЗИН КОВРИКОВ ДЛЯ МЫШИ</h1>
+            <p>Качество, стиль и комфорт для вашего рабочего места</p>
+        </header>
+        
+        <nav>
+            <a href="index.html">🏠 Главная</a>
+            <a href="catalog.html">📦 Каталог</a>
+            <a href="contacti.html">📞 Контакты</a>
+        </nav>
+        
+        <main>
+            <div class="store-info" style="margin-bottom: 30px;">
+                <h2>✨ Добро пожаловать!</h2>
+                <p>Мы предлагаем качественные коврики для мыши с уникальными дизайнами. 
+                   Идеальное скольжение, нескользящая основа и долговечность - всё это наши коврики.</p>
+            </div>
+            
+            <h2>🔥 Популярные товары</h2>
+            <div class="catalog-grid">
+                <div class="product-card">
+                    <img src="./img/6053383722.png" alt="Геншин коврик">
+                    <h3>Геншин коврик</h3>
+                    <p>Для настоящих фанатов игры</p>
+                    <div class="price">1 290 ₽</div>
+                    <a href="catalog.html" class="btn">Подробнее</a>
+                </div>
+                
+                <div class="product-card">
+                    <img src="./img/orig.png" alt="Аниме коврик">
+                    <h3>Аниме коврик</h3>
+                    <p>Яркий и стильный дизайн</p>
+                    <div class="price">1 490 ₽</div>
+                    <a href="catalog.html" class="btn">Подробнее</a>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Все права защищены &copy; 2026 Магазин ковриков для мыши</p>
+        </footer>
+    </div>
+    
+    <div class="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</div>
+    
+    <script>
+        window.addEventListener('scroll', function() {
+            const scrollTop = document.querySelector('.scroll-top');
+            if (window.pageYOffset > 300) {
+                scrollTop.classList.add('show');
+            } else {
+                scrollTop.classList.remove('show');
+            }
+        });
+    </script>
 </body>
 </html>
