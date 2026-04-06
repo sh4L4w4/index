@@ -1,23 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Каталог - Магазин ковриков</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>КАТАЛОГ</h1>
-<hr/>
-<p>Геншин коврик</p>
-<img src="./img/6053383722.png" Width=300 Height = 450 alt="Геншин коврик">
-<a href="./page1.html">Геншин</a>
-<p>Аниме коврик</p>
-<img src="./img/orig.png" Width=300 Height = 450 alt="Аниме коврик">
-<a href="./page2.html">Аниме</a>
-<hr/>
-<p>Все права защищены &copy;</p>
-<a href="./index.html">главная</a>
-<a href="./catalog.html">каталог</a>
-<a href="./contacti.html">контакты</a>
+    <div class="container">
+        <header>
+            <h1>🎮 КАТАЛОГ КОВРИКОВ</h1>
+            <p>Выберите свой идеальный коврик для мыши</p>
+        </header>
+        
+        <nav>
+            <a href="index.html">🏠 Главная</a>
+            <a href="catalog.html">📦 Каталог</a>
+            <a href="contacti.html">📞 Контакты</a>
+        </nav>
+        
+        <main>
+            <div class="catalog-grid">
+                <div class="product-card">
+                    <img src="./img/6053383722.png" alt="Геншин коврик">
+                    <h3>Геншин коврик для мыши</h3>
+                    <p>Ткань на резиновой основе, идеально для игр</p>
+                    <div class="price">1 290 ₽</div>
+                    <a href="#" class="btn">Купить</a>
+                </div>
+                
+                <div class="product-card">
+                    <img src="./img/orig.png" alt="Аниме коврик">
+                    <h3>Аниме коврик для мыши</h3>
+                    <p>Яркий дизайн, гладкое скольжение</p>
+                    <div class="price">1 490 ₽</div>
+                    <a href="#" class="btn">Купить</a>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Все права защищены &copy; 2026 Магазин ковриков для мыши</p>
+        </footer>
+    </div>
+    
+    <div class="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</div>
+    
+    <script>
+        window.addEventListener('scroll', function() {
+            const scrollTop = document.querySelector('.scroll-top');
+            if (window.pageYOffset > 300) {
+                scrollTop.classList.add('show');
+            } else {
+                scrollTop.classList.remove('show');
+            }
+        });
+    </script>
 </body>
 </html>
